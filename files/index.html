@@ -37,10 +37,41 @@
     <label for="verb-1">Verb (ends in -ing): </label>
     <input type="text" name="verb-1" id="verb-1" required>
         <br>
+
 <!-- Other Inputs -->
+    <!-- Number -->
+    <label for="num-1">Number:</label>
+          <input type="number" name="num-1" id="num-1" required>
+          <br>
+    <!-- Yes / No (radio)-->
+    <span>Yes or No: </span>
+        <input type="radio" name="Answer" id="yes" value="yes" required>
+        <label for="yes">Yes</label>
+        <input type="radio" name="Answer" id="no" value="yes" required>
+        <label for="no">No</label>
+            <br>
+    <!-- Speed (Dropdown) -->
+    <label for="speed">Relative Speeds (ends in -er): </label>
+        <select name="speed" id="speed">
+            <option value="slower">Slower</option>
+            <option value="faster">Faster</option>
+        </select>
+            <br>
+    <!-- Quote (datalist) -->
+    <label for="quote">Motivational Quote</label>
+        <input list="quote-choices" id="quote" name="quote" required>
+        <datalist id="quote-choices">
+            <option value="winner gets ice cream!"></option>
+            <option value="losers get nothing!"></option>
+            <option value="draws need to race again!"></option>
+    </datalist>
+            <br>
+    <!-- Takeaway (textarea) -->
+    <label for="message">Meaningful Message: </label>
+    <textarea id="message" name="message" rows="8" cols="40" required></textarea>
+            <br>
 
-
-
+    <!-- Submit form -->
         <input type="submit" value="Form My Story">
     </form> 
     
